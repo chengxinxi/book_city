@@ -1,0 +1,44 @@
+<header class="header">
+    <span><</span>
+    <span>老九门</span>
+    <p>0</p>
+</header>
+
+<section class="section">
+    <div class="pageone">
+        <dl>
+            <dt><img src="{{cover}}" alt=""></dt>
+            <dd>
+                <p>{{title}}</p>
+                <p>{{authors}}</p>
+                <p>{{score_count}}个评价</p>
+                <p>价格：{{price}}书币/千字</p>
+                <p>字数：11万字</p>
+            </dd>
+        </dl>
+    </div>
+    <div class="pagetwo">
+        <span><b id="reader">开始阅读</b></span>
+        <span>  <b>下载</b>  </span>
+    </div>
+    <div class="pagethree">
+        <p>{{content}}</p>
+    </div>
+    <div class="pagefour">
+        <p>最新{{latest}}</p>
+    </div>
+
+
+    <div class="u-folder " id="Tag__63">
+        <div class="folder-top">
+            <h3>类别标签</h3>
+        </div>
+        <div class="folder-cnt">
+            <ul class="m-tag -color">
+                {{#each this.item.categories}}
+                <li class="u-tag">{{this.label}}</li>
+                {{/each}}
+            </ul>
+        </div><em class="folder-more"></em></div>
+
+</section>

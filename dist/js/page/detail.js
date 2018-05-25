@@ -1,0 +1,1 @@
+"use strict";define(["jquery","getUrl","common","text!../../tpl/detail1.html"],function(e,t,o,i){var c=t("active");e.getJSON("/book/detail",{active:c},function(t){console.log(t),o(i,t.item,".wrap"),e("#reader").on("click",function(){location.href="../../read.html"})})});

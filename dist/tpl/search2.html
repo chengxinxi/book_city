@@ -1,0 +1,8 @@
+{{#each ads}} {{#if status}}
+<span class="span{{ad_priority}}">
+   {{ad_name}}
+</span> {{else}}
+
+<span class="active" class="span{{ad_priority}}">
+        {{ad_name}}
+     </span>{{/if}}{{/each}}

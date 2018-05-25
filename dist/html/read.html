@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=0">
+<meta name="format-detection" content="telphone=no, email=no, address=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="stylesheet" href="../css/read.css">
+<link rel="stylesheet" href="../fonts/iconfont.css">
+
+<body>
+    <div class="wrap">
+        <div class="box1">
+
+        </div>
+        <div class="box2" style="display: none">
+            <header class="header">
+                <p id="back">返回</p>
+                <p></p>
+                <p>……</p>
+            </header>
+
+            <div class="main">
+
+            </div>
+            <footer class="footer">
+                <div class="footer_one">
+                    <p class="last_btn">
+                        上一章
+                    </p>
+                    <p id="num_num">
+
+                    </p>
+                    <p class="prev_btn">
+                        下一章
+                    </p>
+                </div>
+
+
+                <div class="footer_two">
+
+                    <dl class="mulu_btn">
+                        <dt>
+                                <i class="icon iconfont icon-gengduo-2"></i>
+                       </dt>
+                        <dd>
+                            目录
+                        </dd>
+                    </dl>
+
+                    <dl id="font">
+                        <dt>
+                             <i class="icon iconfont icon-fenxiang5"></i>
+                        </dt>
+                        <dd>
+                            字体
+                        </dd>
+                    </dl>
+
+
+                    <dl id="evening" style="color:#fff">
+                        <dt>
+                             <i class="icon iconfont icon-eyeopen"></i>
+                        </dt>
+                        <dd>
+                            夜间
+                        </dd>
+                    </dl>
+
+
+                    <dl>
+                        <dt>
+                            <i class="icon iconfont icon-xiazai"></i>
+                        </dt>
+                        <dd>
+                            下载
+                        </dd>
+                    </dl>
+
+                </div>
+
+            </footer>
+
+            <!--字体按钮-->
+            <div class="box_botton" style="display: none">
+                <div class="font_one">
+                    <p>字号</p>
+                    <p id="big_size">大</p>
+                    <p id="small_size">小</p>
+                </div>
+                <div class="font_two">
+                    <span>颜色</span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+
+            </div>
+
+            <!--目录-->
+
+            <div id="catalog" style="display: none;" class="show">
+
+                <header class="header">
+                    <p id="return_back">返回</p>
+                    <p></p>
+                    <p>目录</p>
+                </header>
+                <div class="main1">
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+<script>
+    document.documentElement.style.fontSize = window.innerWidth / 750 * 100 + "px";
+</script>
+<script src="./js/lib/require.js"></script>
+<script>
+    require(['js/main'], function() {
+        require(['read'], function() {
+
+        })
+    });
+</script>
+<script class="box1_1" type="text/x-handlebars-template">
+    <h1>{{t}}</h1>
+    {{#each p}}
+    <p class="font1">{{this}}</p>{{/each}}
+
+</script>
+<script class="mulu_1" type="text/x-handlebars-template">
+
+    {{#each toc}}
+    <p data-main="{{chapter_id}}">{{title}}</p>{{/each}}
+
+</script>
+
+
+
+</html>

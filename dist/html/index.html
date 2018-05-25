@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header">
+
+            <span class="active">书城</span>
+            <span>书架</span>
+            <span class="login_btn">登录</span>
+
+        </header>
+
+        <main class="main swiper-container">
+            <!--书城-->
+            <div class="box swiper-wrapper">
+
+                <div class="tab1 swiper-slide">
+
+                    <div class="scrollbox" data="上拉加载更多……">
+
+
+
+                        <!--搜索框-->
+                        <div class="search">
+                            <a href="search_list.html"><input type="text" placeholder="输入书名作者/关键字"></a>
+
+                        </div>
+
+                        <!--轮播图-->
+                        <div class="swiper-container banner swiper-no-swiping">
+
+                        </div>
+
+                        <!--限免  女生-->
+                        <nav class="nav">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img src="./imgs/icon-money.png" alt=""><br>
+                                        <span>限免</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="">
+                                        <img src="./imgs/icon-female.png" alt=""><br>
+                                        <span>女生</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="">
+                                        <img src="./imgs/icon-male.png" alt=""><br>
+                                        <span>男生</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="">
+                                        <img src="./imgs/icon-category.png" alt=""><br>
+                                        <span>分类</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="">
+                                        <img src="./imgs/icon-rank.png" alt=""><br>
+                                        <span>排行</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+
+
+                        <!--本周最火-->
+                        <div class="week-hot">
+
+                        </div>
+
+
+                        <!--查看更多-->
+                        <div class="look-hot">查看更多</div>
+
+                        <!--重磅推荐-->
+                        <div class="recommend"></div>
+
+
+
+
+
+                        <!--女生最爱-->
+                        <div class="girl_like"></div>
+
+
+
+
+
+                        <!--男生最爱-->
+                        <div class="boy_like"> </div>
+
+
+
+
+
+                        <!--限时免费-->
+                        <div class="time_fire"> </div>
+
+
+
+
+                        <!--精选专题-->
+                        <div class="Special"> </div>
+
+
+
+                        <!--数据-->
+                        <div class="data_list"> </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <div class="tab2 swiper-slide">
+
+                    <div class="tab2n">
+                        <div class="search">
+
+
+                            <a href="search_list.html"><input type="text" placeholder="输入书名作者/关键字"></a>
+
+                            <button class="ps"></button>
+
+
+                        </div>
+
+                        <div class="girl_like">
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <div class="login_page">
+            aaa
+        </div>
+    </div>
+</body>
+<script src="js/lib/require.js"></script>
+<script src="./js/lib/jquery.min.js"></script>
+<script>
+    require(['js/main'], function() {
+        require(['init'], function() {
+
+        })
+    });
+</script>
+<script>
+</script>
+
+</html>
